@@ -1,0 +1,5 @@
+E:\MogoDB.Log\LogAnalysis\Log.MongoDB.Service\bin\Debug\Log.MongoDB.Service.dll
+E:\MogoDB.Log\LogAnalysis\Log.MongoDB.Service\bin\Debug\Log.MongoDB.Service.pdb
+E:\MogoDB.Log\LogAnalysis\Log.MongoDB.Service\obj\Debug\LogAnalysis.MongoDB.Service.csprojResolveAssemblyReference.cache
+E:\MogoDB.Log\LogAnalysis\Log.MongoDB.Service\obj\Debug\Log.MongoDB.Service.dll
+E:\MogoDB.Log\LogAnalysis\Log.MongoDB.Service\obj\Debug\Log.MongoDB.Service.pdb

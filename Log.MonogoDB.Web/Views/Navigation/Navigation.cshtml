@@ -1,0 +1,29 @@
+﻿@model LogAnalysis.MongoDB.Web.ViewModels.NavigationViewModel
+
+<div class="col-md-2">
+    <ul id="main-nav" class="main-nav nav nav-tabs nav-stacked" style="">
+        @foreach (var menu in Model.MenuModels)
+        {
+            int childrenCount = menu.ChildrenMenuModels.Count;
+            <li>
+                <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+                    <i class="glyphicon glyphicon-th-large"></i>
+                    @menu.Text
+                    @if (menu.ChildrenMenuModels != null && menu.ChildrenMenuModels.Count > 0)
+                    {
+                        <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                    }
+                </a>
+                @if (menu.ChildrenMenuModels != null && menu.ChildrenMenuModels.Count > 0)
+                {
+                    <ul id="systemSetting" class="nav nav-list secondmenu collapse" style="height: 0px;">
+                        @foreach (var child in menu.ChildrenMenuModels.OrderBy(x => x.Order))
+                        {
+                            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;@child.Text</a></li>
+                        }
+                    </ul>
+                }
+            </li>
+        }
+    </ul>
+</div>

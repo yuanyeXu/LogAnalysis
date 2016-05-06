@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+    /*控制菜单箭头*/
+    .nav-header.collapsed > span.glyphicon-chevron-toggle:before {
+        content: "\e114";
+    }
+
+    .nav-header > span.glyphicon-chevron-toggle:before {
+        content: "\e113";
+    }
+
+    .secondmenu a {
+        font-size: 12px;
+        color: #4A515B;
+        text-align: center;
+    }
+
+    .secondmenu li.active {
+        background-color: #eee;
+        border-color: #428bca;
+    }
+</style>
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+<div>
+    <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+        <i class="glyphicon glyphicon-cog"></i>
+        系统管理
+        <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+    </a>
+    <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+        <li class="active"><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;用户管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>&nbsp;菜单管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;角色管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-edit"></i>&nbsp;修改密码</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;日志查看</a></li>
+    </ul>
+</div>
